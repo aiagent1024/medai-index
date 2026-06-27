@@ -40,6 +40,12 @@
   function entryRecency(e) {
     return (e.keyDates || []).reduce((mx, k) => (sortKey(k.date) > mx ? sortKey(k.date) : mx), "0000");
   }
+  // "What's changed recently" feed: date each item by when the development
+  // happened (explicit recentDate), NOT the entry's latest keyDate — which may
+  // be a future applicability deadline (e.g. the EU AI Act's 2027/2028 dates).
+  // Falls back to the latest keyDate only when recentDate is absent.
+  function newsDateKey(e) { return e.recentDate ? sortKey(e.recentDate) : entryRecency(e); }
+  function newsDateLabel(e) { return fmtDate(e.recentDate || entryRecency(e).slice(0, 7)); }
 
   /* ---------- facets ---------- */
   const FACETS = [
@@ -132,7 +138,7 @@
 
   /* ---------- VIEW: Home ---------- */
   function renderHome() {
-    const news = LIBRARY.filter((e) => e.recentNote).sort((a, b) => entryRecency(b).localeCompare(entryRecency(a)));
+    const news = LIBRARY.filter((e) => e.recentNote).sort((a, b) => newsDateKey(b).localeCompare(newsDateKey(a)));
     const jurisdictionCount = new Set(LIBRARY.map((e) => e.jurisdiction)).size;
     const bodyCount = new Set(LIBRARY.map((e) => e.body)).size;
 
@@ -219,7 +225,7 @@
           <p class="muted" style="margin:0 0 8px">Key 2024–2026 developments. This is the fastest-moving part of the field — verify before relying on any single date.</p>
           <div class="card card-pad">
             ${news.map((e) => `<div class="news-item">
-              <div class="news-date">${esc(fmtDate(entryRecency(e).slice(0, 7)))}</div>
+              <div class="news-date">${esc(newsDateLabel(e))}</div>
               <div><a class="font-bold" data-link="#/entry/${esc(e.id)}" style="color:var(--c-ink)">${esc(e.shortName)}</a>
                 <div class="tiny muted" style="margin-top:2px">${esc(e.recentNote)}</div></div>
             </div>`).join("")}

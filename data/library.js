@@ -79,6 +79,7 @@ const LIBRARY = [
       { label: "ISO catalogue — ISO/IEC 42005:2025", url: "https://www.iso.org/standard/42005", primary: true },
     ],
     lastVerified: "2026-06-27",
+    recentDate: "2025",
     recentNote: "New in 2025 — gives a concrete method for AI impact assessment that complements ISO/IEC 42001.",
   },
   {
@@ -508,6 +509,7 @@ const LIBRARY = [
     ],
     lastVerified: "2026-06-27",
     isProvisional: true,
+    recentDate: "2025-01",
     recentNote: "FDA's draft total-product-lifecycle guidance for AI devices (Jan 2025) — comprehensive but still draft; watch for finalisation.",
   },
   {
@@ -679,7 +681,8 @@ const LIBRARY = [
     isProvisional: true,
     notes:
       "PROVISIONAL 'Digital Omnibus' delay: in 2026 the EU reached a provisional agreement to postpone high-risk deadlines — standalone Annex III high-risk to ~2 Dec 2027 and product-embedded high-risk (medical devices, Annex I) to ~2 Aug 2028 — because harmonised standards are not ready. This is not yet settled law and dates vary between sources; treat as proposed, not final.",
-    recentNote: "A provisional 2026 'Digital Omnibus' agreement would delay the high-risk deadlines for medical-device AI to ~Aug 2028 — proposed, not yet final.",
+    recentDate: "2026-05",
+    recentNote: "A provisional 2026 'Digital Omnibus' agreement (reported May 2026) would delay the EU AI Act's high-risk deadlines for medical-device AI to ~Aug 2028 — proposed, not yet final.",
   },
   {
     id: "eu-mdr-2017-745",
