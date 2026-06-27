@@ -156,10 +156,8 @@
         <span class="pill">Where AI engineering meets medical-device regulation</span>
         <h1 style="font-size:clamp(28px,4vw,44px);margin:18px 0 14px;max-width:900px">
           Practise responsible AI for medical devices, <span style="color:#7cb0ff">from principle to evidence</span></h1>
-        <p class="lede" style="font-size:17.5px;max-width:840px;margin:0 0 24px">
-          Building a GenAI-enabled medical device means answering to two demanding worlds at once — rigorous AI engineering and medical-device regulation. This is where they meet: we translate a fragmented global landscape of <strong style="color:#fff">regulations, standards and guidance</strong> into working knowledge, so regulatory, clinical and ML practitioners can make safe, defensible decisions and prove them — across <strong style="color:#fff">risk management, safety assessment, guardrails, ongoing monitoring and best practice</strong>, at every stage of the lifecycle.</p>
-        <p class="lede" style="font-size:14.5px;max-width:760px;margin:0 0 26px;opacity:.85">
-          Less a list of documents, more a path to becoming a <strong style="color:#fff">responsible medical-AI practitioner</strong> — understand the obligation, see how the instruments connect, and know what evidence regulators expect.</p>
+        <p class="lede" style="font-size:18px;max-width:820px;margin:0 0 26px">
+          A working reference for the <strong style="color:#fff">responsible medical-AI practitioner</strong> — turning the regulations, standards and guidance that govern GenAI-enabled medical devices into <strong style="color:#fff">defensible practice</strong> across risk management, safety assessment, guardrails, ongoing monitoring and best practice.</p>
         <div class="flex flex-wrap gap-3">
           <a class="btn btn-primary" data-link="#/library">Explore the library ${ICON.arrow}</a>
           <a class="btn btn-ghost-light" data-link="#/matrix">See the coverage matrix</a>
