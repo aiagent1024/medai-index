@@ -1,5 +1,5 @@
 /*
- * taxonomy.js — Controlled vocabularies for MedAI Compass.
+ * taxonomy.js — Controlled vocabularies for Responsible AI-enabled MD Hub.
  * Single source of truth for every filter facet, badge, and matrix axis.
  * Each value is { id, label, description }. The `id` is stable (used in URLs,
  * cross-links, and the LIBRARY entries); the `label` is what users see.

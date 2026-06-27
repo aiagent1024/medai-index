@@ -1,5 +1,5 @@
 /* ============================================================
-   MedAI Compass — application logic
+   Responsible AI-enabled MD Hub — application logic
    Static, data-driven, no build step. Renders LIBRARY / TOPICS /
    GLOSSARY / TAXONOMY (loaded as globals) into #app via a hash router.
    ============================================================ */
